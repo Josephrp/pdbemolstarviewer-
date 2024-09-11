@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "install": "^0.13.0",
+    "pdbe-molstar": "^3.3.0"
+  },
+  "devDependencies": {
+    "@gradio/preview": "^0.11.1"
+  }
+}

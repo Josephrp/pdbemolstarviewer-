@@ -1,0 +1,35 @@
+{
+  "name": "gradio_pdbemolstarviewer",
+  "version": "0.9.4",
+  "description": "Gradio UI packages",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "private": false,
+  "dependencies": {
+    "@gradio/atoms": "^0.3.1",
+    "@gradio/statustracker": "^0.4.1",
+    "@gradio/upload": "^0.5.2",
+    "@gradio/utils": "^0.2.0",
+    "pdbe-molstar": "^3.3.0"
+  },
+  "devDependencies": {
+    "@gradio/client": "^0.8.2",
+    "@gradio/preview": "^0.11.1",
+    "@sveltejs/vite-plugin-svelte": "^2.4.1",
+    "svelte": "^3.59.2",
+    "vite": "^4.3.9"
+  },
+  "peerDependencies": {
+    "svelte": "^3.59.2"
+  },
+  "main": "./Index.svelte",
+  "exports": {
+    ".": "./Index.svelte",
+    "./example": "./Example.svelte",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "postinstall": "cd node_modules/@gradio/preview && npm install && npm run build"
+  }
+}
